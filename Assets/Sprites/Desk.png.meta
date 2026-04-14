@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7ce13faeb8754fc4891fc9f340e111b1
+guid: b88572a5f0b0b9d47b73f96f22e2e674
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ArtworkOne_0
+      name: Desk_0
       rect:
         serializedVersion: 2
-        x: 1618
-        y: 691
-        width: 280
-        height: 246
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,52 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc16efe1561d339429404a5f2e244e42
-      internalID: -1692436882
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ArtworkOne_1
-      rect:
-        serializedVersion: 2
-        x: 1583
-        y: 259
-        width: 58
-        height: 239
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8e1680c0c60f8c409d85a9a4e356f5d
-      internalID: 1854928869
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ArtworkOne_2
-      rect:
-        serializedVersion: 2
-        x: 1866
-        y: 169
-        width: 4
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5cb500f02a0878d438e40ccb95301577
-      internalID: 1401820333
+      spriteID: 7c587a35c23097d4ba3e842f53bc57f6
+      internalID: 740986325
       vertices: []
       indices: 
       edges: []
@@ -166,7 +122,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0e1316aac75b61e45aa084eba025c63b
+    spriteID: a377918e306f81d4da489a54a0f93c73
     internalID: 0
     vertices: []
     indices: 
@@ -178,9 +134,7 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      ArtworkOne_0: -1692436882
-      ArtworkOne_1: 1854928869
-      ArtworkOne_2: 1401820333
+      Desk_0: 740986325
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
