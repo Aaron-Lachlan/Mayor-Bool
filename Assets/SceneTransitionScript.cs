@@ -13,7 +13,7 @@ public class SceneTransitionScript : MonoBehaviour
     public GameObject windowButton;
     public GameObject lookDownButton;
     public GameObject cloudObject;
-    public GameObject skyObject;
+    
 
     private Vector2 officeStartPos;
     private Vector2 outsideWindowStartPos;
@@ -49,7 +49,7 @@ public class SceneTransitionScript : MonoBehaviour
     {
         StopAllCoroutines();
         cloudObject.SetActive(false);
-        skyObject.SetActive(false);
+        
         lookDownButton.SetActive(false);
         lookUpButton.SetActive(false);
         windowButton.SetActive(false);
