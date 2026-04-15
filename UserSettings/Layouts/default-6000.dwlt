@@ -1315,13 +1315,13 @@ MonoBehaviour:
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
-  m_2DMode: 1
+  m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 869.1613, y: 422.59058, z: -104.4577}
+    m_Target: {x: 61.79395, y: 803.34973, z: -173.20049}
     speed: 2
     m_Value: {x: 869.1613, y: 422.59058, z: -104.4577}
   m_RenderMode: 0
@@ -1369,15 +1369,15 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: -0.02194891, y: 0.14643252, z: 0.0032541293, w: 0.9889762}
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 792.25116
+    m_Target: 12.124355
     speed: 2
     m_Value: 792.25116
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
     m_Value: 1
   m_CameraSettings:
@@ -1520,7 +1520,7 @@ MonoBehaviour:
       m_Data: 49580
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 49696
+    - m_Data: 49802
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1553,7 +1553,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 49696
+    - m_Data: 49802
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
