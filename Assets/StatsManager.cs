@@ -2,23 +2,16 @@ using UnityEngine;
 
 public class StatsManager : MonoBehaviour
 {
-    [SerializeField] private int Day = 1;
+    [SerializeField] private int Day;
     [SerializeField] private int Money;
     [SerializeField] private int PeopleHappy;
     [SerializeField] private int Pollution;
 
-    public int ChangeDays
+
+
+    void ChangeDays()
     {
-        get
-        {
-            return Day;
-        }
-        set
-        {
-
-            Day += value;
-
-        }
+        Day++;
     }
     public int ChangeMoney
     {
@@ -58,5 +51,15 @@ public class StatsManager : MonoBehaviour
             Pollution += value;
 
         }
+    }
+
+    private void Awake()
+    {
+        GameManager.current.EventNewDay += ChangeDays;
+    }
+    private void OnDestroy()
+    {
+        GameManager.current.EventNewDay -= ChangeDays;
+
     }
 }
