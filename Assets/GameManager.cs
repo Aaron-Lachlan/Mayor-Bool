@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
     public static GameManager current;
 
     public event Action EventNewDay;
+    public event Action EventBillPassed;
+    public event Action EventBillRejected;
 
     private void Awake()
     {
@@ -25,6 +27,20 @@ public class GameManager : MonoBehaviour
             EventNewDay();
         }
 
+    }
+    public void BillPassed()
+    {
+        if (EventBillPassed != null)
+        {
+            EventBillPassed();
+        }
+    }
+    public void BillRejected()
+    {
+        if (EventBillRejected != null)
+        {
+            EventBillRejected();
+        }
     }
 
     [ContextMenu("Force New Day")]
