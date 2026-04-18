@@ -13,86 +13,121 @@ public class SceneTransitionScript : MonoBehaviour
     public GameObject windowButton;
     public GameObject lookDownButton;
     public GameObject cloudObject;
+
+    public GameObject windowPanel;
     
 
-    private Vector2 officeStartPos;
-    private Vector2 outsideWindowStartPos;
-    private Vector2 deskStartPos;
+    private Vector2 officeOnscreenPos;
+    private Vector2 outsideWindowOnscreenPos;
+    private Vector2 deskOnscreenPos;
 
     private Vector2 officeOffscreenLeft;
-    private Vector2 outsideWindowOnscreenPos;
-
+    private Vector2 outsideWindowOffscreenRight;
     private Vector2 officeOffscreenUp;
-    private Vector2 deskOnscreenPos;
+    private Vector2 deskOffscreenDown;
 
     private void Start()
     {
-        officeStartPos = officePanel.anchoredPosition;
-        outsideWindowOnscreenPos = officeStartPos;
-        deskOnscreenPos = officeStartPos;
-
-        RectTransform parentRect = (RectTransform)officePanel.parent;
+        RectTransform parentRect = (RectTransform)outsideWindowPanel.parent;
         float screenWidth = parentRect.rect.width;
         float screenHeight = parentRect.rect.height;
 
-        officeOffscreenLeft = officeStartPos + new Vector2(-screenWidth, 0);
-        outsideWindowStartPos = outsideWindowOnscreenPos + new Vector2(screenWidth, 0);
+        // Window starts onscreen first
+        outsideWindowOnscreenPos = outsideWindowPanel.anchoredPosition;
 
-        officeOffscreenUp = officeStartPos + new Vector2(0, screenHeight);
-        deskStartPos = deskOnscreenPos + new Vector2(0, -screenHeight);
+        // Office and desk both slide into the same visible position
+        officeOnscreenPos = outsideWindowOnscreenPos;
+        deskOnscreenPos = outsideWindowOnscreenPos;
 
-        outsideWindowPanel.anchoredPosition = outsideWindowStartPos;
-        deskPanel.anchoredPosition = deskStartPos;
+        officeOffscreenLeft = officeOnscreenPos + new Vector2(-screenWidth, 0);
+        outsideWindowOffscreenRight = outsideWindowOnscreenPos + new Vector2(screenWidth, 0);
+        officeOffscreenUp = officeOnscreenPos + new Vector2(0, screenHeight);
+        deskOffscreenDown = deskOnscreenPos + new Vector2(0, -screenHeight);
+
+        // Force starting layout
+        outsideWindowPanel.anchoredPosition = outsideWindowOnscreenPos;
+        officePanel.anchoredPosition = officeOffscreenLeft;
+        deskPanel.anchoredPosition = deskOffscreenDown;
+
+        // Starting buttons for window scene
+        lookUpButton.SetActive(false);
+        lookDownButton.SetActive(false);
+        windowButton.SetActive(false);
+
+        if (cloudObject != null)
+            cloudObject.SetActive(true);
     }
 
+    // Window -> Office
+    public void StartNewDay()
+    {
+        
+        StopAllCoroutines();
+        
+        lookUpButton.SetActive(false);
+        lookDownButton.SetActive(true);
+        windowButton.SetActive(true);
+
+        if (cloudObject != null)
+            cloudObject.SetActive(false);
+
+        StartCoroutine(SlidePanels(
+            outsideWindowPanel, outsideWindowPanel.anchoredPosition, outsideWindowOffscreenRight,
+            officePanel, officePanel.anchoredPosition, officeOnscreenPos
+        ));
+
+        
+    }
+    
+
+    // Office -> Window
     public void EndDay()
     {
-        StopAllCoroutines();
-        cloudObject.SetActive(false);
         
+        StopAllCoroutines();
+
         lookDownButton.SetActive(false);
         lookUpButton.SetActive(false);
         windowButton.SetActive(false);
+
+        if (cloudObject != null)
+            cloudObject.SetActive(true);
+
         StartCoroutine(SlidePanels(
             officePanel, officePanel.anchoredPosition, officeOffscreenLeft,
             outsideWindowPanel, outsideWindowPanel.anchoredPosition, outsideWindowOnscreenPos
         ));
     }
 
-    public void StartNewDay()
-    {
-        StopAllCoroutines();
-        StartCoroutine(SlidePanels(
-            officePanel, officePanel.anchoredPosition, officeStartPos,
-            outsideWindowPanel, outsideWindowPanel.anchoredPosition, outsideWindowStartPos
-        ));
-    }
 
+    // Office -> Desk
     public void GoToDesk()
     {
         StopAllCoroutines();
+
         lookUpButton.SetActive(true);
         lookDownButton.SetActive(false);
         windowButton.SetActive(false);
+
         StartCoroutine(SlidePanels(
             officePanel, officePanel.anchoredPosition, officeOffscreenUp,
             deskPanel, deskPanel.anchoredPosition, deskOnscreenPos
         ));
-
-
     }
 
-    public void LeaveDesk()
+    // Desk -> Office
+    public void BackToOffice()
     {
         StopAllCoroutines();
+
         lookUpButton.SetActive(false);
         lookDownButton.SetActive(true);
         windowButton.SetActive(true);
-        StartCoroutine(SlidePanels(
-            officePanel, officePanel.anchoredPosition, officeStartPos,
-            deskPanel, deskPanel.anchoredPosition, deskStartPos
-        ));
 
+        StartCoroutine(SlidePanels(
+            deskPanel, deskPanel.anchoredPosition, deskOffscreenDown,
+            officePanel, officePanel.anchoredPosition, officeOnscreenPos
+        ));
     }
 
     private IEnumerator SlidePanels(
