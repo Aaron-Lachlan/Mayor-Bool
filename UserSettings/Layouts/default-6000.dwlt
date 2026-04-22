@@ -1322,9 +1322,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 1527.0198, y: 597.81726, z: -112.18622}
+    m_Target: {x: 1547.5104, y: 562.1872, z: 1.5678695}
     speed: 2
-    m_Value: {x: 1071.4443, y: 189.90994, z: -785.35486}
+    m_Value: {x: 1527.0198, y: 597.81726, z: -112.18622}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1372,15 +1372,15 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: 0.13424756, y: 0.022299737, z: 0.0030189704, w: -0.9906783}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1310.7607
+    m_Target: 628.54895
     speed: 2
-    m_Value: 52.19866
+    m_Value: 1310.7607
   m_Ortho:
     m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_CameraSettings:
     m_Speed: 1.0005
     m_SpeedNormalized: 0.49999997
@@ -1394,7 +1394,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.13424754, y: -0.022299737, z: -0.0030189704, w: 0.99067825}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_Viewpoint:
     m_SceneView: {fileID: 15}
@@ -1521,7 +1521,7 @@ MonoBehaviour:
       m_Data: 52508
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 49790
+    - m_Data: 49958
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1554,7 +1554,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 49790
+    - m_Data: 49958
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

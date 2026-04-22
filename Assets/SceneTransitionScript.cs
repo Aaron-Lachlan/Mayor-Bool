@@ -13,6 +13,7 @@ public class SceneTransitionScript : MonoBehaviour
     public GameObject windowButton;
     public GameObject lookDownButton;
     public GameObject cloudObject;
+    public GameObject officeButton;
 
     public GameObject windowPanel;
     
@@ -55,26 +56,14 @@ public class SceneTransitionScript : MonoBehaviour
         windowButton.SetActive(false);
 
         if (cloudObject != null)
-            cloudObject.SetActive(true);
+            cloudObject.SetActive(false);
     }
 
     // Window -> Office
     public void StartNewDay()
     {
         
-        StopAllCoroutines();
         
-        lookUpButton.SetActive(false);
-        lookDownButton.SetActive(true);
-        windowButton.SetActive(true);
-
-        if (cloudObject != null)
-            cloudObject.SetActive(false);
-
-        StartCoroutine(SlidePanels(
-            outsideWindowPanel, outsideWindowPanel.anchoredPosition, outsideWindowOffscreenRight,
-            officePanel, officePanel.anchoredPosition, officeOnscreenPos
-        ));
 
         
     }
@@ -89,9 +78,10 @@ public class SceneTransitionScript : MonoBehaviour
         lookDownButton.SetActive(false);
         lookUpButton.SetActive(false);
         windowButton.SetActive(false);
+        officeButton.SetActive(true);
 
         if (cloudObject != null)
-            cloudObject.SetActive(true);
+            cloudObject.SetActive(false);
 
         StartCoroutine(SlidePanels(
             officePanel, officePanel.anchoredPosition, officeOffscreenLeft,
@@ -120,6 +110,7 @@ public class SceneTransitionScript : MonoBehaviour
     {
         StopAllCoroutines();
 
+        officeButton.SetActive(false);
         lookUpButton.SetActive(false);
         lookDownButton.SetActive(true);
         windowButton.SetActive(true);
