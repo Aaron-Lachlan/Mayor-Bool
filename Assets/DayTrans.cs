@@ -16,9 +16,9 @@ public class DayTrans : MonoBehaviour
     public float TimeDayIsDisplayed;
     public float TimeDayIsFaded;
 
+    public int DisplayDay;
 
-
-    private void Awake()
+    private void Start()
     {
         GameManager.current.EventNewDay += NewDay;
 
@@ -31,10 +31,13 @@ public class DayTrans : MonoBehaviour
 
     }
 
-    public void NewDay()
+    public void NewDay(int day)
     {
-        //fix txt Displaying correct day num
+        
 
+        DisplayDay = day + 1;
+        //order of events with the event system cause this to run before +1 is added to the day on StatsManager
+        //the +1 is to compensate for that
 
         StartCoroutine("DayCavansChange");
     }
@@ -49,6 +52,8 @@ public class DayTrans : MonoBehaviour
         {
             canvas.SetActive(true);
         }
+
+        text.text = "Day: " + DisplayDay;
 
         //fade in (also w/ check for 1st boot)
         if (Time.time > TimeDayIsDisplayed + TimeDayIsFaded)

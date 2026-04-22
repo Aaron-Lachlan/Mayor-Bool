@@ -9,10 +9,27 @@ public class StatsManager : MonoBehaviour
 
 
 
-    void ChangeDays()
+    void ChangeDays(int day)
     {
-        Day++;
+        Daytest = day + 1;
     }
+    public int Daytest
+    {
+            
+        get
+        {
+            return Day;
+
+        }
+        set
+        {
+
+            Day = value;
+
+        }
+
+    }
+
     public int ChangeMoney
     {
         get
@@ -53,7 +70,7 @@ public class StatsManager : MonoBehaviour
         }
     }
 
-    private void Awake()
+    private void Start()
     {
         GameManager.current.EventNewDay += ChangeDays;
     }

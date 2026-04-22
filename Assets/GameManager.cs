@@ -5,10 +5,13 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager current;
 
-    public event Action EventNewDay;
+    public event Action<int> EventNewDay;
     public event Action EventBillPassed;
     public event Action EventBillRejected;
+    public event Action EventShowGraph;
 
+    public StatsManager StatsManager;
+            
     private void Awake()
     {
         current = this;
@@ -20,11 +23,11 @@ public class GameManager : MonoBehaviour
     {
         ForceNewDay();
     }
-    public void NewDay()
+    public void NewDay(int day)
     {
         if (EventNewDay != null)
         {
-            EventNewDay();
+            EventNewDay(day);
         }
 
     }
@@ -42,10 +45,17 @@ public class GameManager : MonoBehaviour
             EventBillRejected();
         }
     }
+    public void ShowGraph()
+    {
+        if (EventShowGraph != null)
+        {
+            EventShowGraph();
+        }
+    }
 
     [ContextMenu("Force New Day")]
     public void ForceNewDay()
     {
-        GameManager.current.NewDay();
+        GameManager.current.NewDay(StatsManager.Daytest);
     }
 }

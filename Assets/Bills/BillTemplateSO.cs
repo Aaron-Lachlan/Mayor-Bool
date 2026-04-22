@@ -10,7 +10,7 @@ public class BillTemplateSO : ScriptableObject
     public string ChangePeopleHappyAmount;
     public string ChangePollutionAmount;
 
-    public void Awake()
+    public void Start()
     {
         GameManager.current.EventBillRejected += ApplyBill;
         GameManager.current.EventBillRejected += RejectBill;
