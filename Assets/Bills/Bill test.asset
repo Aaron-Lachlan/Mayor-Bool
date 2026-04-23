@@ -16,3 +16,41 @@ MonoBehaviour:
   ChangeMoneyAmount: 10
   ChangePeopleHappyAmount: -5
   ChangePollutionAmount: 20
+  ShipSlot: 0
+  OceanBuildingSlot: 0
+  AestheticSlot1: 0
+  AestheticSlot2: 0
+  AestheticSlot3: 0
+  AestheticSlot4: 0
+  AestheticSlot5: 0
+  AestheticSlot6: 0
+  BuildingSlot1: 0
+  BuildingSlot2: 0
+  BuildingSlot3: 0
+  BuildingSlot4: 0
+  BuildingSlot5: 0
+  BuildingSlot6: 1
+  BuildingSlot7: 0
+  BuildingSlot8: 0
+  BuildingSlot9: 0
+  BuildingSlot10: 0
+  BuildingSlots: 000000000000000000000000000000000000
+  BuildingSlotNames:
+  - BuildingSlot1
+  - BuildingSlot2
+  - BuildingSlot3
+  - BuildingSlot4
+  - BuildingSlot5
+  - BuildingSlot6
+  - BuildingSlot7
+  - BuildingSlot8
+  - BuildingSlot9
+  - BuildingSlot10
+  - AestheticSlot1
+  - AestheticSlot2
+  - AestheticSlot3
+  - AestheticSlot4
+  - AestheticSlot5
+  - AestheticSlot6
+  - OceanBuildingSlot
+  - ShipSlot

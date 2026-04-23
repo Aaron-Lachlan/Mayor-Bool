@@ -1666,6 +1666,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 597956057}
   m_CullTransparentMesh: 1
+--- !u!1 &640267506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 640267508}
+  - component: {fileID: 640267507}
+  m_Layer: 0
+  m_Name: BuildingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &640267507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640267506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a86cc15aa3e510040a2199e9af9b4333, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BuildingManager
+  buildingSlots:
+  - slotName: ShipSlot
+    buildingObject: {fileID: 363780234}
+  - slotName: OceanBuildingSlot
+    buildingObject: {fileID: 1389939163}
+  - slotName: AestheticSlot1
+    buildingObject: {fileID: 1055728002}
+  - slotName: AestheticSlot2
+    buildingObject: {fileID: 1093090535}
+  - slotName: AestheticSlot3
+    buildingObject: {fileID: 1306010912}
+  - slotName: AestheticSlot4
+    buildingObject: {fileID: 762950145}
+  - slotName: AestheticSlot5
+    buildingObject: {fileID: 1544115304}
+  - slotName: AestheticSlot6
+    buildingObject: {fileID: 1108530481}
+  - slotName: BuildingSlot1
+    buildingObject: {fileID: 404043911}
+  - slotName: BuildingSlot2
+    buildingObject: {fileID: 212511750}
+  - slotName: BuildingSlot3
+    buildingObject: {fileID: 1826568542}
+  - slotName: BuildingSlot4
+    buildingObject: {fileID: 579715305}
+  - slotName: BuildingSlot5
+    buildingObject: {fileID: 536870222}
+  - slotName: BuildingSlot6
+    buildingObject: {fileID: 1758779655}
+  - slotName: BuildingSlot7
+    buildingObject: {fileID: 2075273425}
+  - slotName: BuildingSlot8
+    buildingObject: {fileID: 1995359367}
+  - slotName: BuildingSlot9
+    buildingObject: {fileID: 1254800042}
+  - slotName: BuildingSlot10
+    buildingObject: {fileID: 2100335557}
+--- !u!4 &640267508
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640267506}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &685158494
 GameObject:
   m_ObjectHideFlags: 0
@@ -5371,3 +5452,4 @@ SceneRoots:
   - {fileID: 1113908103}
   - {fileID: 1083724448}
   - {fileID: 488984}
+  - {fileID: 640267508}

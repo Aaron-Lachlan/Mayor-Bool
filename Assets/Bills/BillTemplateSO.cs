@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -31,10 +31,10 @@ public class BillTemplateSO : ScriptableObject
     public bool BuildingSlot10;
     public List<bool> BuildingSlots;
     public List<string> BuildingSlotNames = new List<string>() { "BuildingSlot1", "BuildingSlot2", "BuildingSlot3", "BuildingSlot4", "BuildingSlot5", "BuildingSlot6", "BuildingSlot7", "BuildingSlot8", "BuildingSlot9", "BuildingSlot10", "AestheticSlot1", "AestheticSlot2", "AestheticSlot3", "AestheticSlot4", "AestheticSlot5", "AestheticSlot6", "OceanBuildingSlot", "ShipSlot" };
-
+    /*
     public void Awake()
     {
-        BuildingSlots = new List<bool>() { BuildingSlot1, BuildingSlot2, BuildingSlot3, BuildingSlot4, BuildingSlot5, BuildingSlot6, BuildingSlot7, BuildingSlot8, BuildingSlot9, BuildingSlot10, AestheticSlot1, AestheticSlot2, AestheticSlot3, AestheticSlot4, AestheticSlot5, AestheticSlot6, OceanBuildingSlot, ShipSlot };
+        
         
         GameManager.current.EventBillPassed += ApplyBill;
         GameManager.current.EventBillRejected += RejectBill;
@@ -42,10 +42,12 @@ public class BillTemplateSO : ScriptableObject
     }
     public void OnDestroy()
     {
+        
         GameManager.current.EventBillPassed -= ApplyBill;
         GameManager.current.EventBillRejected -= RejectBill;
         GameManager.current.EventBillPassed -= BuildingCheck;
     }
+   */
     public void ApplyBill()
     {
         StatsManager statsManager = GameManager.FindObjectOfType<StatsManager>();
@@ -60,20 +62,27 @@ public class BillTemplateSO : ScriptableObject
     }
     public void BuildingCheck()
     {
-        for (int i = 0; i < BuildingSlots.Count; i++)
+        BuildingManager manager = FindObjectOfType<BuildingManager>();
+
+        if (manager == null)
         {
-            if (BuildingSlots[i])
-            {
-                bool slot = BuildingSlots[i];
-                if (slot == true)
-                {
-                    GameObject building = GameObject.Find(BuildingSlotNames[i]);
-                    if (building != null)
-                    {
-                        building.SetActive(true);
-                    }
-                }
-            }
+            Debug.LogError("No BuildingManager found in scene.");
+            return;
+        }
+
+        List<bool> buildingSlots = new List<bool>()
+    {
+        BuildingSlot1, BuildingSlot2, BuildingSlot3, BuildingSlot4, BuildingSlot5,
+        BuildingSlot6, BuildingSlot7, BuildingSlot8, BuildingSlot9, BuildingSlot10,
+        AestheticSlot1, AestheticSlot2, AestheticSlot3, AestheticSlot4, AestheticSlot5,
+        AestheticSlot6, OceanBuildingSlot, ShipSlot
+    };
+
+        for (int i = 0; i < buildingSlots.Count && i < BuildingSlotNames.Count; i++)
+        {
+            if (!buildingSlots[i]) continue;
+
+            manager.ActivateSlot(BuildingSlotNames[i]);
         }
     }
 }

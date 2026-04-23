@@ -21,14 +21,7 @@ public class BillManager : MonoBehaviour
     private GameObject currentBillObject;
     private BillScript currentBill;
 
-    public void Update()
-    {
-        if (billAmount <= 0)
-        {
-            sceneTransitionScript.BackToOffice();
-
-        }
-    }
+   
 
     public void SpawnNextBill()
     {
@@ -77,7 +70,7 @@ public class BillManager : MonoBehaviour
 
             billRect.position = spawnPoint.position;
 
-            // 👇 set scale to 6
+            
             billRect.localScale = new Vector3(6f, 6f, 6f);
 
             billRect.localRotation = Quaternion.identity;
@@ -149,6 +142,11 @@ public class BillManager : MonoBehaviour
         if (billAmount > 0)
         {
             SpawnNextBill();
+        }
+        else
+        {
+            sceneTransitionScript.BackToOffice();
+            endDayButton.SetActive(true);
         }
     }
 }

@@ -25,6 +25,7 @@ public class BillScript : MonoBehaviour
         hasBeenResolved = true;
 
         ApplyEffects();
+        template.BuildingCheck();
 
         if (manager != null)
         {
@@ -55,5 +56,6 @@ public class BillScript : MonoBehaviour
         Debug.Log("Pollution change: " + template.ChangePollutionAmount);
 
         template.ApplyBill();
+        
     }
 }

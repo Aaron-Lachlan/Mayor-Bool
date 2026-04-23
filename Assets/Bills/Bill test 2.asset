@@ -7,7 +7,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8f24595461ce6e4884d84f9ab6274cf, type: 3}
   m_Name: Bill test 2
@@ -16,3 +16,41 @@ MonoBehaviour:
   ChangeMoneyAmount: 12
   ChangePeopleHappyAmount: 23
   ChangePollutionAmount: -43
+  ShipSlot: 0
+  OceanBuildingSlot: 0
+  AestheticSlot1: 0
+  AestheticSlot2: 1
+  AestheticSlot3: 0
+  AestheticSlot4: 0
+  AestheticSlot5: 0
+  AestheticSlot6: 0
+  BuildingSlot1: 0
+  BuildingSlot2: 0
+  BuildingSlot3: 0
+  BuildingSlot4: 0
+  BuildingSlot5: 0
+  BuildingSlot6: 0
+  BuildingSlot7: 0
+  BuildingSlot8: 0
+  BuildingSlot9: 0
+  BuildingSlot10: 0
+  BuildingSlots: 000000000000000000000001000000000000
+  BuildingSlotNames:
+  - BuildingSlot1
+  - BuildingSlot2
+  - BuildingSlot3
+  - BuildingSlot4
+  - BuildingSlot5
+  - BuildingSlot6
+  - BuildingSlot7
+  - BuildingSlot8
+  - BuildingSlot9
+  - BuildingSlot10
+  - AestheticSlot1
+  - AestheticSlot2
+  - AestheticSlot3
+  - AestheticSlot4
+  - AestheticSlot5
+  - AestheticSlot6
+  - OceanBuildingSlot
+  - ShipSlot

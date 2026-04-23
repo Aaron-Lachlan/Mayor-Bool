@@ -85,14 +85,14 @@ public class SceneTransitionScript : MonoBehaviour
     }
     public IEnumerator WaitToActivateDoors()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         doorClosed.SetActive(false);
         doorOpen.SetActive(true);
 
         
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         GoToDesk();
         
@@ -102,7 +102,7 @@ public class SceneTransitionScript : MonoBehaviour
     }
     public IEnumerator WaitToActivateBills()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         billManager.SpawnNextBill();
 
