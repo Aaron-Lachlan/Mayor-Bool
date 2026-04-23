@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1902
     height: 971
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -238,23 +238,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 603
-    width: 1371
-    height: 312
-  m_MinSize: {x: 101, y: 126}
-  m_MaxSize: {x: 4001, y: 4026}
-  m_ActualView: {fileID: 19}
+    y: 609
+    width: 1460
+    height: 315
+  m_MinSize: {x: 231, y: 276}
+  m_MaxSize: {x: 10001, y: 10026}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 18}
-  - {fileID: 19}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -662,24 +661,13 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: []
+      m_SelectedIDs:
+      - m_Data: 49474
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -47424
-      - m_Data: -44760
-      - m_Data: -43674
-      - m_Data: -42558
-      - m_Data: -42232
-      - m_Data: -41010
-      - m_Data: -38240
-      - m_Data: -37136
-      - m_Data: -1644
-      - m_Data: 49444
-      - m_Data: 49462
-      - m_Data: 55632
-      - m_Data: 57088
-      - m_Data: 58674
+      - m_Data: -2718
+      - m_Data: -1824
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1403,9 +1391,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 1071.4443, y: 189.90994, z: -785.35486}
     speed: 2
-    m_Value: {x: 925.7829, y: 322.86353, z: 2.7880182}
+    m_Value: {x: 1071.4443, y: 189.90994, z: -785.35486}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1451,13 +1439,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Target: {x: -0.13424754, y: -0.022299737, z: -0.0030189704, w: 0.99067825}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: -0.1342494, y: -0.022300046, z: -0.0030190123, w: 0.990692}
   m_Size:
-    m_Target: 10
+    m_Target: 52.19866
     speed: 2
-    m_Value: 532.5009
+    m_Value: 52.19866
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1578,7 +1566,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites
+    - Assets/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1588,21 +1576,22 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sprites
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\GitKraken\Mayor-Bool
+  m_LastProjectPath: C:\Users\Dylan\OneDrive\Documents\Unity Projects\Mayor-Bool
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_Data: 50062
+    - m_Data: 49462
     m_LastClickedID:
-      m_Data: 50062
+      m_Data: 49462
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 49934
+    - m_Data: 49164
+    - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1635,7 +1624,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 49934
+    - m_Data: 49164
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1663,8 +1652,8 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_Data: 58530
-    m_LastClickedInstanceID: 58530
+    - m_Data: 49474
+    m_LastClickedInstanceID: 49474
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs:
     - m_Data: 67630
