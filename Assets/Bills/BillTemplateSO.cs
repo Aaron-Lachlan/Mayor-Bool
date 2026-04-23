@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -9,16 +11,40 @@ public class BillTemplateSO : ScriptableObject
     public string ChangeMoneyAmount;
     public string ChangePeopleHappyAmount;
     public string ChangePollutionAmount;
+    public bool ShipSlot;
+    public bool OceanBuildingSlot;
+    public bool AestheticSlot1;
+    public bool AestheticSlot2;
+    public bool AestheticSlot3;
+    public bool AestheticSlot4;
+    public bool AestheticSlot5;
+    public bool AestheticSlot6;
+    public bool BuildingSlot1;
+    public bool BuildingSlot2;
+    public bool BuildingSlot3;
+    public bool BuildingSlot4;
+    public bool BuildingSlot5;
+    public bool BuildingSlot6;
+    public bool BuildingSlot7;
+    public bool BuildingSlot8;
+    public bool BuildingSlot9;
+    public bool BuildingSlot10;
+    public List<bool> BuildingSlots;
+    public List<string> BuildingSlotNames = new List<string>() { "BuildingSlot1", "BuildingSlot2", "BuildingSlot3", "BuildingSlot4", "BuildingSlot5", "BuildingSlot6", "BuildingSlot7", "BuildingSlot8", "BuildingSlot9", "BuildingSlot10", "AestheticSlot1", "AestheticSlot2", "AestheticSlot3", "AestheticSlot4", "AestheticSlot5", "AestheticSlot6", "OceanBuildingSlot", "ShipSlot" };
 
-    public void Start()
+    public void Awake()
     {
-        GameManager.current.EventBillRejected += ApplyBill;
+        BuildingSlots = new List<bool>() { BuildingSlot1, BuildingSlot2, BuildingSlot3, BuildingSlot4, BuildingSlot5, BuildingSlot6, BuildingSlot7, BuildingSlot8, BuildingSlot9, BuildingSlot10, AestheticSlot1, AestheticSlot2, AestheticSlot3, AestheticSlot4, AestheticSlot5, AestheticSlot6, OceanBuildingSlot, ShipSlot };
+        
+        GameManager.current.EventBillPassed += ApplyBill;
         GameManager.current.EventBillRejected += RejectBill;
+        GameManager.current.EventBillPassed += BuildingCheck;
     }
     public void OnDestroy()
     {
         GameManager.current.EventBillPassed -= ApplyBill;
         GameManager.current.EventBillRejected -= RejectBill;
+        GameManager.current.EventBillPassed -= BuildingCheck;
     }
     public void ApplyBill()
     {
@@ -31,5 +57,23 @@ public class BillTemplateSO : ScriptableObject
     public void RejectBill()
     {
         //return to pool
+    }
+    public void BuildingCheck()
+    {
+        for (int i = 0; i < BuildingSlots.Count; i++)
+        {
+            if (BuildingSlots[i])
+            {
+                bool slot = BuildingSlots[i];
+                if (slot == true)
+                {
+                    GameObject building = GameObject.Find(BuildingSlotNames[i]);
+                    if (building != null)
+                    {
+                        building.SetActive(true);
+                    }
+                }
+            }
+        }
     }
 }

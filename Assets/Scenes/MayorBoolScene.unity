@@ -657,12 +657,12 @@ GameObject:
   - component: {fileID: 212511753}
   - component: {fileID: 212511752}
   m_Layer: 5
-  m_Name: BuildingSlotTwo
+  m_Name: BuildingSlot2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &212511751
 RectTransform:
   m_ObjectHideFlags: 0
@@ -887,7 +887,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &363780235
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1045,12 +1045,12 @@ GameObject:
   - component: {fileID: 404043914}
   - component: {fileID: 404043913}
   m_Layer: 5
-  m_Name: BuildingOne
+  m_Name: BuildingSlot1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &404043912
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1325,12 +1325,12 @@ GameObject:
   - component: {fileID: 536870225}
   - component: {fileID: 536870224}
   m_Layer: 5
-  m_Name: BuildingSlotFive
+  m_Name: BuildingSlot5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &536870223
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1418,22 +1418,22 @@ RectTransform:
   m_Children:
   - {fileID: 363780235}
   - {fileID: 1389939164}
-  - {fileID: 2100335558}
+  - {fileID: 1055728003}
   - {fileID: 1093090536}
   - {fileID: 1306010913}
-  - {fileID: 536870223}
-  - {fileID: 1758779656}
-  - {fileID: 2075273426}
-  - {fileID: 579715306}
-  - {fileID: 1055728003}
   - {fileID: 762950146}
   - {fileID: 1544115305}
   - {fileID: 1108530482}
+  - {fileID: 404043912}
+  - {fileID: 212511751}
   - {fileID: 1826568543}
+  - {fileID: 579715306}
+  - {fileID: 536870223}
+  - {fileID: 1758779656}
+  - {fileID: 2075273426}
   - {fileID: 1995359368}
   - {fileID: 1254800043}
-  - {fileID: 212511751}
-  - {fileID: 404043912}
+  - {fileID: 2100335558}
   m_Father: {fileID: 1113908103}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1528,12 +1528,12 @@ GameObject:
   - component: {fileID: 579715308}
   - component: {fileID: 579715307}
   m_Layer: 5
-  m_Name: BuildingSlotFour
+  m_Name: BuildingSlot4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &579715306
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1880,12 +1880,12 @@ GameObject:
   - component: {fileID: 762950148}
   - component: {fileID: 762950147}
   m_Layer: 5
-  m_Name: AestheticSlotFour
+  m_Name: AestheticSlot4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &762950146
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2596,12 +2596,12 @@ GameObject:
   - component: {fileID: 1055728005}
   - component: {fileID: 1055728004}
   m_Layer: 5
-  m_Name: AestheticSlotOne
+  m_Name: AestheticSlot1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1055728003
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2871,12 +2871,12 @@ GameObject:
   - component: {fileID: 1093090538}
   - component: {fileID: 1093090537}
   m_Layer: 5
-  m_Name: AestheticSlotTwo
+  m_Name: AestheticSlot2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1093090536
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3021,12 +3021,12 @@ GameObject:
   - component: {fileID: 1108530484}
   - component: {fileID: 1108530483}
   m_Layer: 5
-  m_Name: AestheticSlotSix
+  m_Name: AestheticSlot6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1108530482
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3636,12 +3636,12 @@ GameObject:
   - component: {fileID: 1254800045}
   - component: {fileID: 1254800044}
   m_Layer: 5
-  m_Name: BuildingSlotNine
+  m_Name: BuildingSlot9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1254800043
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3711,12 +3711,12 @@ GameObject:
   - component: {fileID: 1306010915}
   - component: {fileID: 1306010914}
   m_Layer: 5
-  m_Name: AestheticSlotThree
+  m_Name: AestheticSlot3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1306010913
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3866,7 +3866,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1389939164
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4086,12 +4086,12 @@ GameObject:
   - component: {fileID: 1544115307}
   - component: {fileID: 1544115306}
   m_Layer: 5
-  m_Name: AestheticSlotFive
+  m_Name: AestheticSlot5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1544115305
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4640,12 +4640,12 @@ GameObject:
   - component: {fileID: 1758779658}
   - component: {fileID: 1758779657}
   m_Layer: 5
-  m_Name: BuildingSlotSix
+  m_Name: BuildingSlot6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1758779656
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4715,12 +4715,12 @@ GameObject:
   - component: {fileID: 1826568545}
   - component: {fileID: 1826568544}
   m_Layer: 5
-  m_Name: BuildingSlotThree
+  m_Name: BuildingSlot3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1826568543
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4998,12 +4998,12 @@ GameObject:
   - component: {fileID: 1995359370}
   - component: {fileID: 1995359369}
   m_Layer: 5
-  m_Name: BuildingSlotEight
+  m_Name: BuildingSlot8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1995359368
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5148,12 +5148,12 @@ GameObject:
   - component: {fileID: 2075273428}
   - component: {fileID: 2075273427}
   m_Layer: 5
-  m_Name: BuildingSlotSeven
+  m_Name: BuildingSlot7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2075273426
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5223,12 +5223,12 @@ GameObject:
   - component: {fileID: 2100335560}
   - component: {fileID: 2100335559}
   m_Layer: 5
-  m_Name: BuildingSlotSeven
+  m_Name: BuildingSlot10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2100335558
 RectTransform:
   m_ObjectHideFlags: 0
