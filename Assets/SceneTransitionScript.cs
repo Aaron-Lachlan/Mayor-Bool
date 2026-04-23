@@ -9,14 +9,19 @@ public class SceneTransitionScript : MonoBehaviour
     [SerializeField] private RectTransform deskPanel;
     [SerializeField] private float duration = 0.5f;
 
-    public GameObject lookUpButton;
+    
     public GameObject windowButton;
-    public GameObject lookDownButton;
+    
     public GameObject cloudObject;
     public GameObject officeButton;
 
+    public GameObject doorOpen, doorClosed;
+
     public GameObject windowPanel;
-    
+
+    [SerializeField] private BillManager billManager;
+
+
 
     private Vector2 officeOnscreenPos;
     private Vector2 outsideWindowOnscreenPos;
@@ -29,6 +34,7 @@ public class SceneTransitionScript : MonoBehaviour
 
     private void Start()
     {
+        
         RectTransform parentRect = (RectTransform)outsideWindowPanel.parent;
         float screenWidth = parentRect.rect.width;
         float screenHeight = parentRect.rect.height;
@@ -51,8 +57,7 @@ public class SceneTransitionScript : MonoBehaviour
         deskPanel.anchoredPosition = deskOffscreenDown;
 
         // Starting buttons for window scene
-        lookUpButton.SetActive(false);
-        lookDownButton.SetActive(false);
+        
         windowButton.SetActive(false);
 
         if (cloudObject != null)
@@ -62,12 +67,51 @@ public class SceneTransitionScript : MonoBehaviour
     // Window -> Office
     public void StartNewDay()
     {
+        StopAllCoroutines();
+
+        officeButton.SetActive(false);
         
+       
+
         
+
+        StartCoroutine(SlidePanels(
+            deskPanel, deskPanel.anchoredPosition, deskOffscreenDown,
+            officePanel, officePanel.anchoredPosition, officeOnscreenPos
+        ));
+
+        StartCoroutine(WaitToActivateDoors());
+
+    }
+    public IEnumerator WaitToActivateDoors()
+    {
+        yield return new WaitForSeconds(3f);
+
+        doorClosed.SetActive(false);
+        doorOpen.SetActive(true);
+
+        
+
+        yield return new WaitForSeconds(3f);
+
+        GoToDesk();
+        
+        StartCoroutine(WaitToActivateBills());
+        
+
+    }
+    public IEnumerator WaitToActivateBills()
+    {
+        yield return new WaitForSeconds(3f);
+
+        billManager.SpawnNextBill();
+
+        doorClosed.SetActive(true);
+        doorOpen.SetActive(false);
 
         
     }
-    
+
 
     // Office -> Window
     public void EndDay()
@@ -75,8 +119,7 @@ public class SceneTransitionScript : MonoBehaviour
         
         StopAllCoroutines();
 
-        lookDownButton.SetActive(false);
-        lookUpButton.SetActive(false);
+        
         windowButton.SetActive(false);
         officeButton.SetActive(true);
 
@@ -95,8 +138,7 @@ public class SceneTransitionScript : MonoBehaviour
     {
         StopAllCoroutines();
 
-        lookUpButton.SetActive(true);
-        lookDownButton.SetActive(false);
+        
         windowButton.SetActive(false);
 
         StartCoroutine(SlidePanels(
@@ -111,9 +153,8 @@ public class SceneTransitionScript : MonoBehaviour
         StopAllCoroutines();
 
         officeButton.SetActive(false);
-        lookUpButton.SetActive(false);
-        lookDownButton.SetActive(true);
-        windowButton.SetActive(true);
+        
+        
 
         StartCoroutine(SlidePanels(
             deskPanel, deskPanel.anchoredPosition, deskOffscreenDown,

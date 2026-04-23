@@ -58,4 +58,41 @@ public class GameManager : MonoBehaviour
     {
         GameManager.current.NewDay(StatsManager.Daytest);
     }
+
+
+    public void AddMoney(int amount)
+    {
+        if (StatsManager == null)
+        {
+            Debug.LogError("StatsManager not found.");
+            return;
+        }
+
+        StatsManager.ChangeMoney += amount;
+        Debug.Log("Money changed by: " + amount);
+    }
+
+    public void AddHappiness(int amount)
+    {
+        if (StatsManager == null)
+        {
+            Debug.LogError("StatsManager not found.");
+            return;
+        }
+
+        StatsManager.ChangePeopleHappy += amount;
+        Debug.Log("Happiness changed by: " + amount);
+    }
+
+    public void AddPollution(int amount)
+    {
+        if (StatsManager == null)
+        {
+            Debug.LogError("StatsManager not found.");
+            return;
+        }
+
+        StatsManager.ChangePollution += amount;
+        Debug.Log("Pollution changed by: " + amount);
+    }
 }
