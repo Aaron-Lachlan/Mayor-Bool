@@ -8,6 +8,9 @@ public class BillSlideOnDesk : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float duration = 0.5f;
 
+    //public AudioClip stampSound;
+    public AudioSource audioSource;
+
     private RectTransform rectTransform;
     private RectTransform target;
 

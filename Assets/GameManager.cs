@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -11,6 +12,9 @@ public class GameManager : MonoBehaviour
     public event Action EventShowGraph;
 
     public StatsManager StatsManager;
+
+    //Audio definitions
+    public AudioSource clickSound;
             
     private void Awake()
     {
@@ -94,5 +98,19 @@ public class GameManager : MonoBehaviour
 
         StatsManager.ChangePollution += amount;
         Debug.Log("Pollution changed by: " + amount);
+    }
+
+    IEnumerator WaitOne()
+    {
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(1);
+    }
+
+    public void QuitGame()
+    {
+        print("Wait...");
+        StartCoroutine(WaitOne());
+        print("Quit!");
+        Application.Quit();
     }
 }

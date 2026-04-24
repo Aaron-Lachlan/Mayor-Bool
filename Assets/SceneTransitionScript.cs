@@ -19,6 +19,11 @@ public class SceneTransitionScript : MonoBehaviour
 
     public GameObject windowPanel;
 
+    public AudioSource audioSource;
+    public AudioClip openDoorSFX;
+    public AudioClip closeDoorSFX;
+    //public AudioSource clickSound;
+
     [SerializeField] private BillManager billManager;
 
 
@@ -89,6 +94,7 @@ public class SceneTransitionScript : MonoBehaviour
 
         doorClosed.SetActive(false);
         doorOpen.SetActive(true);
+        audioSource.PlayOneShot(openDoorSFX);
 
         
 
@@ -108,6 +114,7 @@ public class SceneTransitionScript : MonoBehaviour
 
         doorClosed.SetActive(true);
         doorOpen.SetActive(false);
+        audioSource.PlayOneShot(closeDoorSFX);
 
         
     }

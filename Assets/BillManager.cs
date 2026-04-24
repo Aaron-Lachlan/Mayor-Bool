@@ -21,6 +21,11 @@ public class BillManager : MonoBehaviour
     private GameObject currentBillObject;
     private BillScript currentBill;
 
+    public AudioSource audioSource;
+    public AudioClip newBillSlideIn;
+    public AudioClip acceptedBillSlide;
+    public AudioClip rejectedBillSlide;
+
    
 
     public void SpawnNextBill()
@@ -116,12 +121,14 @@ public class BillManager : MonoBehaviour
 
         float time = 0f;
 
+        audioSource.PlayOneShot(acceptedBillSlide);
         while (time < moveDuration)
         {
             time += Time.deltaTime;
             float t = time / moveDuration;
 
             billRect.position = Vector3.Lerp(startPos, endPos, t);
+
             yield return null;
         }
 

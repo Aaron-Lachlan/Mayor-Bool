@@ -9,7 +9,8 @@ using static UnityEngine.Rendering.DebugUI;
 
 public class DayTrans : MonoBehaviour
 {
-    public GameObject canvas;
+    public GameObject loadingCanvas;
+    public GameObject menuCanvas;
     Image panel;
     TextMeshProUGUI text;
 
@@ -20,15 +21,35 @@ public class DayTrans : MonoBehaviour
 
     private void Start()
     {
-        GameManager.current.EventNewDay += NewDay;
+        //GameManager.current.EventNewDay += NewDay;
 
-        panel = canvas.GetComponentInChildren<Image>();
-        text = canvas.GetComponentInChildren<TextMeshProUGUI>();
+        panel = loadingCanvas.GetComponentInChildren<Image>();
+        text = loadingCanvas.GetComponentInChildren<TextMeshProUGUI>();
     }
+
     private void OnDestroy()
     {
         GameManager.current.EventNewDay -= NewDay;
 
+    }
+
+    IEnumerator WaitOne()
+    {
+        //yield on a new YieldInstruction that waits for 5 seconds.
+        yield return new WaitForSeconds(1);
+    }
+    
+    public void LoadDayOne()
+    {
+        print("Wait...");
+        StartCoroutine(WaitOne());
+        print("Play!");
+        //GameManager.current.EventNewDay += NewDay;
+        DisplayDay += 1;
+        //order of events with the event system cause this to run before +1 is added to the day on StatsManager
+        //the +1 is to compensate for that
+
+        StartCoroutine("DayCavansChange");
     }
 
     public void NewDay(int day)
@@ -48,9 +69,11 @@ public class DayTrans : MonoBehaviour
     {
 
 
-        if (!canvas.activeSelf)
+        if (!loadingCanvas.activeSelf)
         {
-            canvas.SetActive(true);
+            loadingCanvas.SetActive(true);
+            menuCanvas.SetActive(false);
+            BoolSceneManager.current.LoadNewDay();
         }
 
         text.text = "Day: " + DisplayDay;
@@ -92,7 +115,7 @@ public class DayTrans : MonoBehaviour
             yield return null;
         }
 
-        canvas.SetActive(false);
+        loadingCanvas.SetActive(false);
         yield return null;
     }
     private void ChangeLerpTargetPanel(float A, float B, float t)
