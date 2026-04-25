@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8f24595461ce6e4884d84f9ab6274cf, type: 3}
+  m_Name: Fossil Fuel Tax
+  m_EditorClassIdentifier: Assembly-CSharp::BillTemplateSO
+  BillName: Fossil Fuel Tax
+  BillDescription: A Bill that proposes the introduction of a high fossil fuel tax
+    for a heavy increase in government funds and disincentivization of fossil fuel
+    usage
+  ChangeMoneyAmount: 80
+  ChangePeopleHappyAmount: -60
+  ChangePollutionAmount: -20
+  RemoveBuilding: 0
+  ShipSlot: 0
+  OceanBuildingSlot: 0
+  AestheticSlot1: 0
+  AestheticSlot2: 0
+  AestheticSlot3: 0
+  AestheticSlot4: 0
+  AestheticSlot5: 0
+  AestheticSlot6: 0
+  BuildingSlot1: 0
+  BuildingSlot2: 0
+  BuildingSlot3: 0
+  BuildingSlot4: 0
+  BuildingSlot5: 0
+  BuildingSlot6: 0
+  BuildingSlot7: 0
+  BuildingSlot8: 0
+  BuildingSlot9: 0
+  BuildingSlot10: 0

@@ -169,6 +169,19 @@ MonoBehaviour:
   billTemplates:
   - {fileID: 11400000, guid: cebdf7eb8b0a98042a3fa3f0ee1c68e1, type: 2}
   - {fileID: 11400000, guid: 0ec4700a1fcbfec41be28c98965abfa0, type: 2}
+  - {fileID: 11400000, guid: ba361aa4bc9c1cc40985dda8a98eafae, type: 2}
+  - {fileID: 11400000, guid: 9ab572879189232499a9b92d220d3b87, type: 2}
+  - {fileID: 11400000, guid: 5fcc2cc04c4b7984d8857d56b99979a5, type: 2}
+  - {fileID: 11400000, guid: 6034f485efb1607488eb740bec635a1e, type: 2}
+  - {fileID: 11400000, guid: 9b1bd151b8d00284986ed084f2a4e950, type: 2}
+  - {fileID: 11400000, guid: d4bf8d69660264548b2784db49aeb086, type: 2}
+  - {fileID: 11400000, guid: db41eb46f09b81c4f8554071b18c4eb5, type: 2}
+  - {fileID: 11400000, guid: 95e8ea47423aa8b41bc26913e6a9fb36, type: 2}
+  - {fileID: 11400000, guid: 5fcc2cc04c4b7984d8857d56b99979a5, type: 2}
+  - {fileID: 11400000, guid: dd2ff4b18f6a9f74a9643c8d6a27cb86, type: 2}
+  - {fileID: 11400000, guid: 5796f4db87872da46819765673586800, type: 2}
+  - {fileID: 11400000, guid: b04cce1759ca9934fb8796413d7c63f6, type: 2}
+  - {fileID: 11400000, guid: d64557839458cc84ca5d38342e7bbdcb, type: 2}
   billAmount: 5
   acceptTarget: {fileID: 189679675}
   rejectTarget: {fileID: 930811025}

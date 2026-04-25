@@ -4,12 +4,14 @@ using System.Collections;
 
 public class BillManager : MonoBehaviour
 {
+    [Header("Bill")]
     [SerializeField] private GameObject billPrefab;
     [SerializeField] private RectTransform spawnPoint;
     [SerializeField] private RectTransform billParent;
     [SerializeField] private BillTemplateSO[] billTemplates;
     [SerializeField] private int billAmount = 5;
 
+    [Header("Interaction")]
     [SerializeField] private RectTransform acceptTarget;
     [SerializeField] private RectTransform rejectTarget;
     [SerializeField] private float moveDuration = 0.5f;

@@ -29,4 +29,21 @@ public class BuildingManager : MonoBehaviour
 
         Debug.LogWarning("Slot not found: " + slotName);
     }
+    public void DeactivateSlot(string slotName)
+    {
+        foreach (var slot in buildingSlots)
+        {
+            if (slot.slotName == slotName)
+            {
+                if (slot.buildingObject != null)
+                {
+                    slot.buildingObject.SetActive(false);
+                    Debug.Log("Activated: " + slotName);
+                }
+                return;
+            }
+        }
+
+        Debug.LogWarning("Slot not found: " + slotName);
+    }
 }
