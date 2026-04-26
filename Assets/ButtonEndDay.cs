@@ -9,6 +9,7 @@ public class ButtonEndDay : MonoBehaviour
     public void OnGraphEndDayPress()
     {
         GraphCanvas.SetActive(true);
+
         GameManager.current.SendGraphData();
     }
     public void onEndDayPress()

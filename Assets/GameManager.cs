@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
     {
         if (EventSendGraphData != null)
         {
-            Debug.Log("tringger");
+            
             EventSendGraphData(StatsManager.Daytest, StatsManager.ChangeMoney, StatsManager.ChangePeopleHappy, StatsManager.ChangePollution);
         }
 
