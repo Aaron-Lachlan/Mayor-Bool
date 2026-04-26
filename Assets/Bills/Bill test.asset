@@ -12,10 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8f24595461ce6e4884d84f9ab6274cf, type: 3}
   m_Name: Bill test
   m_EditorClassIdentifier: Assembly-CSharp::BillTemplateSO
-  BillName: test
+  BillName: Raise sales taxes on electric cars
+  BillDescription: 'A bill that proposes the increase of sales tax for all electric
+    and hybrid cars '
   ChangeMoneyAmount: 10
   ChangePeopleHappyAmount: -5
   ChangePollutionAmount: 20
+  RemoveBuilding: 0
   ShipSlot: 0
   OceanBuildingSlot: 0
   AestheticSlot1: 0
@@ -34,23 +37,3 @@ MonoBehaviour:
   BuildingSlot8: 0
   BuildingSlot9: 0
   BuildingSlot10: 0
-  BuildingSlots: 000000000000000000000000000000000000
-  BuildingSlotNames:
-  - BuildingSlot1
-  - BuildingSlot2
-  - BuildingSlot3
-  - BuildingSlot4
-  - BuildingSlot5
-  - BuildingSlot6
-  - BuildingSlot7
-  - BuildingSlot8
-  - BuildingSlot9
-  - BuildingSlot10
-  - AestheticSlot1
-  - AestheticSlot2
-  - AestheticSlot3
-  - AestheticSlot4
-  - AestheticSlot5
-  - AestheticSlot6
-  - OceanBuildingSlot
-  - ShipSlot

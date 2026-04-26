@@ -16,8 +16,8 @@ MonoBehaviour:
   BillDescription: A bill that proposes an lower fishing limit to allow for less
     commercial fishing
   ChangeMoneyAmount: -5
-  ChangePeopleHappyAmount: 10
-  ChangePollutionAmount: -20
+  ChangePeopleHappyAmount: 20
+  ChangePollutionAmount: -25
   RemoveBuilding: 0
   ShipSlot: 0
   OceanBuildingSlot: 0
