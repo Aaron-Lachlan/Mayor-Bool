@@ -10,6 +10,7 @@ public class BillManager : MonoBehaviour
     [SerializeField] private RectTransform billParent;
     [SerializeField] private BillTemplateSO[] billTemplates;
     [SerializeField] private int billAmount = 5;
+    [SerializeField] private int billAmountReset = 5;
 
     [Header("Interaction")]
     [SerializeField] private RectTransform acceptTarget;
@@ -149,6 +150,7 @@ public class BillManager : MonoBehaviour
         {
             sceneTransitionScript.BackToOffice();
             endDayButton.SetActive(true);
+            billAmount = billAmountReset;
         }
     }
 }

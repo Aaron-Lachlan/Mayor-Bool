@@ -182,11 +182,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5796f4db87872da46819765673586800, type: 2}
   - {fileID: 11400000, guid: b04cce1759ca9934fb8796413d7c63f6, type: 2}
   - {fileID: 11400000, guid: d64557839458cc84ca5d38342e7bbdcb, type: 2}
-  - {fileID: 11400000, guid: f49cc91bb18422e44b222193e4386487, type: 2}
-  - {fileID: 11400000, guid: 036808c945c161f47a81cb46669a887a, type: 2}
-  - {fileID: 11400000, guid: a7cc5ab30fcd0d246847cd28b87478f6, type: 2}
-  - {fileID: 11400000, guid: 5124c1f55ad4d5e49baf8ee6ff43f2e9, type: 2}
+  - {fileID: 11400000, guid: 0a65498a82ba69442a9a5ec8e79b37b6, type: 2}
+  - {fileID: 11400000, guid: ba74be02557192f40b6592cccfecf08c, type: 2}
+  - {fileID: 11400000, guid: 349994fdded16b348ac5f5e8764651f4, type: 2}
+  - {fileID: 11400000, guid: 6c96e8bd416a04142b6f8058ffec59d3, type: 2}
+  - {fileID: 11400000, guid: d7e6beec804b02b4fa56da8f4810c6f6, type: 2}
+  - {fileID: 11400000, guid: 9761c8449d04f5a43919854f86111961, type: 2}
   billAmount: 5
+  billAmountReset: 5
   acceptTarget: {fileID: 189679675}
   rejectTarget: {fileID: 930811025}
   moveDuration: 0.5
