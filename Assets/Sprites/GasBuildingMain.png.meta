@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a16a3400959fd249b7c682a1706dd62
+guid: 5e6f028f6eaa59a49a53df5ef5978a11
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -49,7 +49,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 801, y: 324, z: 688, w: 237}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: School_0
+      name: GasBuildingMain_0
       rect:
         serializedVersion: 2
-        x: 665
-        y: 382
-        width: 590
-        height: 403
+        x: 1437
+        y: 1044
+        width: 5
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39a530e710583c04cadda40f4d5223d2
-      internalID: 442749054
+      spriteID: 5511940fa2a9b3044ab73b36d73c8d02
+      internalID: -717058270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GasBuildingMain_1
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 403
+        width: 52
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831087051c8ee324da281e99ec8d7cd7
+      internalID: -1092438906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GasBuildingMain_2
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 409
+        width: 410
+        height: 412
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87632a9de4934a34e9099240d074dce9
+      internalID: 1439253709
       vertices: []
       indices: 
       edges: []
@@ -122,8 +166,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c7e1e33041244224f91b059bd54fe509
-    internalID: 0
+    spriteID: c6b033051d09d224fb1c2f0cbeb3d7db
+    internalID: 1802487701
     vertices: []
     indices: 
     edges: []
@@ -132,9 +176,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":640.0,"y":1080.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      School_0: 442749054
+      GasBuildingMain_0: -717058270
+      GasBuildingMain_1: -1092438906
+      GasBuildingMain_2: 1439253709
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

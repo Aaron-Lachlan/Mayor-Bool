@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a16a3400959fd249b7c682a1706dd62
+guid: b8a604b552e537b49804f71f60a8d9db
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: School_0
+      name: Wheat_0
       rect:
         serializedVersion: 2
-        x: 665
-        y: 382
-        width: 590
-        height: 403
+        x: 343
+        y: 514
+        width: 178
+        height: 145
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39a530e710583c04cadda40f4d5223d2
-      internalID: 442749054
+      spriteID: e9fadc8b8e9adb24d9ce032cea6be919
+      internalID: -1051588831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wheat_1
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 532
+        width: 62
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daedee6db7068ca49afac3fa78f507ff
+      internalID: -1712451136
       vertices: []
       indices: 
       edges: []
@@ -122,7 +144,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c7e1e33041244224f91b059bd54fe509
+    spriteID: 6a8aaf0e7b821224aae7fcb61bd1a553
     internalID: 0
     vertices: []
     indices: 
@@ -132,9 +154,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":1.0},"gridSpriteSize":{"x":640.0,"y":1080.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      School_0: 442749054
+      Wheat_0: -1051588831
+      Wheat_1: -1712451136
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -20,10 +20,11 @@ MonoBehaviour:
   ChangeMoneyAmount: -50
   ChangePeopleHappyAmount: 90
   ChangePollutionAmount: -100
+  RemoveBuilding: 0
   ShipSlot: 0
   OceanBuildingSlot: 0
   AestheticSlot1: 0
-  AestheticSlot2: 0
+  AestheticSlot2: 1
   AestheticSlot3: 0
   AestheticSlot4: 0
   AestheticSlot5: 0

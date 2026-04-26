@@ -22,12 +22,12 @@ MonoBehaviour:
   ShipSlot: 0
   OceanBuildingSlot: 0
   AestheticSlot1: 0
-  AestheticSlot2: 0
+  AestheticSlot2: 1
   AestheticSlot3: 0
   AestheticSlot4: 0
   AestheticSlot5: 0
   AestheticSlot6: 0
-  BuildingSlot1: 1
+  BuildingSlot1: 0
   BuildingSlot2: 0
   BuildingSlot3: 0
   BuildingSlot4: 0

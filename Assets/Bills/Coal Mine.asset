@@ -26,8 +26,8 @@ MonoBehaviour:
   AestheticSlot4: 0
   AestheticSlot5: 0
   AestheticSlot6: 0
-  BuildingSlot1: 1
-  BuildingSlot2: 0
+  BuildingSlot1: 0
+  BuildingSlot2: 1
   BuildingSlot3: 0
   BuildingSlot4: 0
   BuildingSlot5: 0

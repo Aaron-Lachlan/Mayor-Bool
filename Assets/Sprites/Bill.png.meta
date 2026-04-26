@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: da54df4076b9a0741b8be34465d6323c
+guid: 77d4492d807f2a74da6fae06dfd79756
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -37,8 +37,8 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
   nPOTScale: 0
   lightmap: 0
@@ -54,7 +54,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 2
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WaterTwo_0
+      name: Bill_0
       rect:
         serializedVersion: 2
-        x: 78
-        y: 95
-        width: 1764
-        height: 498
+        x: 467
+        y: 235
+        width: 480
+        height: 605
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7843c77516daddf459046fc1f21afdc3
-      internalID: 1935695252
+      spriteID: c7f0601fd9ec9254baf831f24326e9d4
+      internalID: -1551419894
       vertices: []
       indices: 
       edges: []
@@ -122,7 +122,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1dccdb78c2c5fa84baaa40acb5dd01ed
+    spriteID: b2aa8dd839dfc724581ee4290e521212
     internalID: 0
     vertices: []
     indices: 
@@ -134,7 +134,7 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      WaterTwo_0: 1935695252
+      Bill_0: -1551419894
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
