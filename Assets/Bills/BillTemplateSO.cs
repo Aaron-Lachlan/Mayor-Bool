@@ -78,7 +78,7 @@ public class BillTemplateSO : ScriptableObject
         AestheticSlot1, AestheticSlot2, AestheticSlot3, AestheticSlot4, AestheticSlot5,
         AestheticSlot6, OceanBuildingSlot, ShipSlot
     };
-
+        /*
         for (int i = 0; i < buildingSlots.Count && i < BuildingSlotNames.Count; i++)
         {
             if (!buildingSlots[i]) continue;
@@ -91,6 +91,20 @@ public class BillTemplateSO : ScriptableObject
                 {
                     manager.ActivateSlot(BuildingSlotNames[i]);
                 }
+            }
+        }
+        */
+        for (int i = 0; i < buildingSlots.Count && i < BuildingSlotNames.Count; i++)
+        {
+            if (!buildingSlots[i]) continue;
+
+            if (RemoveBuilding == false)
+            {
+                manager.ActivateSlot(BuildingSlotNames[i]);
+            }
+            else
+            {
+                manager.DeactivateSlot(BuildingSlotNames[i]);
             }
         }
     }
