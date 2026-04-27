@@ -7,10 +7,11 @@ using UnityEngine.Rendering;
 public class BillTemplateSO : ScriptableObject
 {
     public string BillName;
-
+    public string BillDescription;
     public string ChangeMoneyAmount;
     public string ChangePeopleHappyAmount;
     public string ChangePollutionAmount;
+    public bool RemoveBuilding;
     public bool ShipSlot;
     public bool OceanBuildingSlot;
     public bool AestheticSlot1;
@@ -29,8 +30,8 @@ public class BillTemplateSO : ScriptableObject
     public bool BuildingSlot8;
     public bool BuildingSlot9;
     public bool BuildingSlot10;
-    public List<bool> BuildingSlots;
-    public List<string> BuildingSlotNames = new List<string>() { "BuildingSlot1", "BuildingSlot2", "BuildingSlot3", "BuildingSlot4", "BuildingSlot5", "BuildingSlot6", "BuildingSlot7", "BuildingSlot8", "BuildingSlot9", "BuildingSlot10", "AestheticSlot1", "AestheticSlot2", "AestheticSlot3", "AestheticSlot4", "AestheticSlot5", "AestheticSlot6", "OceanBuildingSlot", "ShipSlot" };
+    private List<bool> BuildingSlots;
+    private List<string> BuildingSlotNames = new List<string>() { "BuildingSlot1", "BuildingSlot2", "BuildingSlot3", "BuildingSlot4", "BuildingSlot5", "BuildingSlot6", "BuildingSlot7", "BuildingSlot8", "BuildingSlot9", "BuildingSlot10", "AestheticSlot1", "AestheticSlot2", "AestheticSlot3", "AestheticSlot4", "AestheticSlot5", "AestheticSlot6", "OceanBuildingSlot", "ShipSlot" };
     /*
     public void Awake()
     {
@@ -81,8 +82,16 @@ public class BillTemplateSO : ScriptableObject
         for (int i = 0; i < buildingSlots.Count && i < BuildingSlotNames.Count; i++)
         {
             if (!buildingSlots[i]) continue;
-
-            manager.ActivateSlot(BuildingSlotNames[i]);
+            {
+                if (RemoveBuilding == false)
+                {
+                    manager.DeactivateSlot(BuildingSlotNames[i]);
+                }
+                else
+                {
+                    manager.ActivateSlot(BuildingSlotNames[i]);
+                }
+            }
         }
     }
 }

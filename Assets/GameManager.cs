@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public event Action EventBillRejected;
     public event Action EventShowGraph;
 
+    public event Action<int,int,int,int> EventSendGraphData;
+
     public StatsManager StatsManager;
 
     //Audio definitions
@@ -32,6 +34,15 @@ public class GameManager : MonoBehaviour
         if (EventNewDay != null)
         {
             EventNewDay(day);
+        }
+
+    }
+    public void SendGraphData()
+    {
+        if (EventSendGraphData != null)
+        {
+            
+            EventSendGraphData(StatsManager.Daytest, StatsManager.ChangeMoney, StatsManager.ChangePeopleHappy, StatsManager.ChangePollution);
         }
 
     }

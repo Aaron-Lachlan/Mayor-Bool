@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class BillScript : MonoBehaviour
@@ -6,6 +7,11 @@ public class BillScript : MonoBehaviour
     private BillManager manager;
     private bool hasBeenResolved = false;
 
+    public TMP_Text billNameText;
+    public TMP_Text moneyText;
+    public TMP_Text peopleHappyText;
+    public TMP_Text pollutionText;
+
     public void Setup(BillTemplateSO newTemplate, BillManager newManager)
     {
         template = newTemplate;
@@ -13,10 +19,20 @@ public class BillScript : MonoBehaviour
 
         gameObject.name = template.BillName;
 
+        DisplayBillData();
+
         Debug.Log("Spawned bill: " + template.BillName);
         Debug.Log("Money: " + template.ChangeMoneyAmount +
                   ", People Happy: " + template.ChangePeopleHappyAmount +
                   ", Pollution: " + template.ChangePollutionAmount);
+    }
+
+    private void DisplayBillData()
+    {
+        billNameText.text = template.BillName;
+        moneyText.text = "Money: " + template.ChangeMoneyAmount;
+        peopleHappyText.text = "Happiness: " + template.ChangePeopleHappyAmount;
+        pollutionText.text = "Pollution: " + template.ChangePollutionAmount;
     }
 
     public void AcceptBill()
