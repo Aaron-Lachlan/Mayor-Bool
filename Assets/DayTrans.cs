@@ -45,7 +45,7 @@ public class DayTrans : MonoBehaviour
         StartCoroutine(WaitOne());
         print("Play!");
         //GameManager.current.EventNewDay += NewDay;
-        DisplayDay += 1;
+        DisplayDay = 0;
         //order of events with the event system cause this to run before +1 is added to the day on StatsManager
         //the +1 is to compensate for that
 
