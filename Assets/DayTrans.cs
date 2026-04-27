@@ -21,7 +21,7 @@ public class DayTrans : MonoBehaviour
 
     private void Start()
     {
-        //GameManager.current.EventNewDay += NewDay;
+        GameManager.current.EventNewDay += NewDay;
 
         panel = loadingCanvas.GetComponentInChildren<Image>();
         text = loadingCanvas.GetComponentInChildren<TextMeshProUGUI>();

@@ -27,12 +27,13 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        ForceNewDay();
+     
     }
     public void NewDay(int day)
     {
         if (EventNewDay != null)
         {
+            
             EventNewDay(day);
         }
 
